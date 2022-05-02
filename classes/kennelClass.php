@@ -1,6 +1,6 @@
 <?php
 
-class Kennel
+class Kennel extends AnimalProduct
 {
     public $kennelName;
     public $kennelMaterial;

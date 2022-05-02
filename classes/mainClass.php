@@ -1,25 +1,28 @@
 <?php
 
-include_once __DIR__ . '/classes/foodClass.php';
-include_once __DIR__ . '/classes/toyClass.php';
-include_once __DIR__ . '/classes/kennelClass.php';
-
 class AnimalProduct
 {
-    protected $itemDestination;     //Dogs, Cats, etc.
-    protected $itemDisponibility;   //Available or not...
-    protected int $itemQuantity;    //How many items.
-    protected $itemPrice;           //Price
+    public $itemDestination;     //Dogs, Cats, etc.
+    public $itemDisponibility;   //Available or not...
+    public int $itemQuantity;    //How many items.
+    public $itemPrice;           //Price
 
+
+    //--------------------------
     //Costructor:
-    public function __construct($itemDestination, $itemDisponibility, $itemQuantity)
+    //--------------------------
+    public function __construct($itemDestination, $itemDisponibility, $itemQuantity, $itemPrice)
     {
         $this->itemDestination = $itemDestination;
         $this->itemDisponibility = $itemDisponibility;
         $this->itemQuantity = $itemQuantity;
+        $this->itemPrice = $itemPrice;
     }
 
+
+    //--------------------------
     //Get Methods:
+    //--------------------------
     public function getItemDestination(){
         return $this->itemDestination;
     }
@@ -32,7 +35,10 @@ class AnimalProduct
         return $this->itemQuantity;
     }
 
+
+    //--------------------------
     //Set Methods:
+    //--------------------------
     public function setItemDestination($itemDestination){
         $this->itemDestination = $itemDestination;
     }
@@ -47,10 +53,3 @@ class AnimalProduct
 }
 ?>
 
-<?php
-$product1 = new AnimalProduct('Birds','Available', 38);
-?>
-
-<p><?=$product1->getItemDestination();?></p>
-<p><?=$product1->getItemDisponibility();?></p>
-<p><?=$product1->getItemQuantity();?></p>
