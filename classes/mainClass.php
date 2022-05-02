@@ -54,3 +54,12 @@ class AnimalProduct
         $this->itemQuantity = $itemQuantity;
     }
 }
+?>
+
+<?php
+$product1 = new AnimalProduct('Birds','Available', 38);
+?>
+
+<p><?=$product1->getItemDestination();?></p>
+<p><?=$product1->getItemDisponibility();?></p>
+<p><?=$product1->getItemQuantity();?></p>
