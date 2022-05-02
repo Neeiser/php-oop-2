@@ -2,5 +2,7 @@
 
 class Food
 {
-    private $salutiamo = 'ciao a tutti';
+    public $foodName;
+    public $foodExpireDate;
+    public $foodWeight;
 }

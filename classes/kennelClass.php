@@ -2,5 +2,7 @@
 
 class Kennel
 {
-    private $salutiamo = 'ciao a tutti';
+    public $kennelName;
+    public $kennelMaterial;
+    public $kennelDimension;
 }

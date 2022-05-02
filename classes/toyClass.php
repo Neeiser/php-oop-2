@@ -2,5 +2,7 @@
 
 class Toy
 {
-    private $saluto = 'ciao';
+    public $toyName;
+    public $toyMaterial;
+    public $toyDimension;
 }

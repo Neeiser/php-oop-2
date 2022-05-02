@@ -6,10 +6,11 @@ include_once __DIR__ . '/classes/kennelClass.php';
 
 class AnimalProduct
 {
-    private $itemDestination;   //Dogs, Cats, etc.
-    private $itemDate;          //On stock since...
-    private $itemDisponibility; //Available or not.
-    private int $itemQuantity;      //How many items.
+    protected $itemDestination;     //Dogs, Cats, etc.
+    protected $itemDate;            //On stock since...
+    protected $itemDisponibility;   //Available or not.
+    protected int $itemQuantity;    //How many items.
+    protected $itemPrice;           //Price
 
     //Costructor:
     public function __construct($itemDestination, $itemDisponibility, $itemQuantity)
