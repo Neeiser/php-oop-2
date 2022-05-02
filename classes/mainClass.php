@@ -35,6 +35,10 @@ class AnimalProduct
         return $this->itemQuantity;
     }
 
+    public function getItemPrice(){
+        return $this->itemPrice;
+    }
+
 
     //--------------------------
     //Set Methods:

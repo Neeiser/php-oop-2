@@ -26,7 +26,7 @@ class User extends AnimalProduct
 
     public function setDiscount(){
         if ($this->userRegistered == true) {
-            return $this->discount = 20;
+            $this->userDiscount = 20;
         }
     }
 }
