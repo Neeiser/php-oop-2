@@ -7,6 +7,9 @@ class Food extends AnimalProduct
     public $foodExpireDate;
     public $foodWeight;
 
+    //--------------------------
+    //Costructor:
+    //--------------------------
     public function __construct($itemDestination, $itemDisponibility, $itemQuantity, $itemPrice, $foodName, $foodExpireDate, $foodWeight)
     {
 
@@ -17,7 +20,9 @@ class Food extends AnimalProduct
         $this->foodWeight = $foodWeight;
     }
 
+    //--------------------------
     //Get Methods:
+    //--------------------------
     public function getFoodName(){
         return $this->foodName;
     }
@@ -30,7 +35,9 @@ class Food extends AnimalProduct
         return $this->foodWeight;
     }
 
+    //--------------------------
     //Set Methods:
+    //--------------------------
     public function setFoodName($foodName){
         $this->foodName = $foodName;
     }
@@ -44,14 +51,3 @@ class Food extends AnimalProduct
     }
 }
 ?>
-
-<?php
-$product1->setFoodName('Mangime');
-$product1->setFoodExpireDate('01-01-2030');
-$product1->setFoodWeight(18);
-?>
-
-
-<p><?=$product1->getFoodName();?></p>
-<p><?=$product1->getFoodExpireDate();?></p>
-<p><?=$product1->getFoodWeight();?>kg</p>
