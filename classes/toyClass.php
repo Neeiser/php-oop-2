@@ -1,6 +1,6 @@
 <?php
 
-class Testing
+class Toy
 {
     private $saluto = 'ciao';
 }

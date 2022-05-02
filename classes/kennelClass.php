@@ -1,6 +1,6 @@
 <?php
 
-class Test
+class Kennel
 {
     private $salutiamo = 'ciao a tutti';
 }
