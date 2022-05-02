@@ -7,6 +7,9 @@ class Toy extends AnimalProduct
     public $toyMaterial;
     public $toyDimension;
 
+    //--------------------------
+    //Costructor:
+    //--------------------------
     public function __construct($itemDestination, $itemDisponibility, $itemQuantity, $itemPrice, $toyName, $toyMaterial, $toyDimension)
     {
 
@@ -17,7 +20,9 @@ class Toy extends AnimalProduct
         $this->toyDimension = $toyDimension;
     }
 
+    //--------------------------
     //Get Methods:
+    //--------------------------
     public function getToyName(){
         return $this->toyName;
     }
@@ -30,7 +35,9 @@ class Toy extends AnimalProduct
         return $this->toyDimension;
     }
 
+    //--------------------------
     //Set Methods:
+    //--------------------------
     public function setToyName($toyName){
         $this->toyName = $toyName;
     }
