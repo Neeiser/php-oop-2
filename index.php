@@ -22,6 +22,8 @@ $kennelProduct1= new Kennel('Dog', 'Available', 2, 999, 'Dog\'s life', 'Leather'
         <p><strong>Name: </strong><?=$foodProduct1->getFoodName();?></p>
         <p><strong>Expiration: </strong><?=$foodProduct1->getFoodExpireDate();?></p>
         <p><strong>Weight: </strong><?=$foodProduct1->getFoodWeight();?> kg</p>
+        <p>PREZZO:</p>
+        <p>PREZZO TOTALE:</p>
     </div>
     
     <div>
